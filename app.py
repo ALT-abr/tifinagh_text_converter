@@ -11,7 +11,7 @@ def home():
         message = request.form['message']
         resultat = convert_to_tifinagh(message)
 
-    return render_template('index.html, resultat=resultat)')
+    return render_template("index.html", resultat=resultat)
 
 if __name__ == '__main__':
     app.run(debug=True)
