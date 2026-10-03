@@ -68,3 +68,25 @@ accents = str.maketrans({
 
 def remove_accents(message):
     return message.translate(accents)
+
+def convert_to_tifinagh(message):
+    message = remove_accents(message.lower())
+
+    resultat = ""
+    i = 0
+
+    while i < len(message):
+        groupe = message[i:i+2]
+
+        if groupe in groupes:
+            resultat += groupes[groupe]
+            i += 2
+
+        else:
+            lettre = message[i]
+            resultat += alphabet.get(lettre, lettre)
+            i += 1
+
+    return resultat
+
+print(convert_to_tifinagh("Azul fell-awen !"))
