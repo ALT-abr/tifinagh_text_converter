@@ -10,6 +10,7 @@
 <body>
     <header> 
         <section class="logo">
+            <img src="" alt="logo tifinagh">
             <h1 class="logo-title">
                 Convertisseur Latin → Tifinagh
             </h1>
@@ -17,14 +18,34 @@
     </header>
 
     <main>
-        <form method="POST">
-            <textarea name="message"></textarea>
-            <button type="submit"> 
-                Convertir 
-            </button>
-        </form>
+        <section class="container">
+            <section class="form block">
+                <h2 class="form-title subtitle">
+                    Entrez votre texte en alphabet latin
+                </h2>
+                    
+                <form method="POST">        
+                    <textarea name="message"></textarea>    
 
-        <p>{{ resultat }}</p>
+                    <button type="submit">      
+                        Convertir       
+                    </button>       
+                </form>
+            </section>
+
+            <section class="result block">
+                <h2 class="result-title subtitle">
+                    resultat de la conversion
+                </h2>
+
+                <section class="result_container">
+                    <p>
+                        {{ resultat }}
+                    </p>
+                </section>
+                
+            </section>
+        </section>
     </main>
 </body>
 </html>
