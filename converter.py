@@ -39,3 +39,32 @@ groupes = {
     "gh": "ⵖ",
     "kh": "ⵅ"
 }
+
+accents = str.maketrans({
+    "à": "a",
+    "á": "a",
+    "â": "a",
+    "ä": "a",
+    "ã": "a",
+    "å": "a",
+    "é": "e",
+    "è": "e",
+    "ê": "e",
+    "ë": "e",
+    "í": "i",
+    "ì": "i",
+    "î": "i",
+    "ï": "i",
+    "ó": "o",
+    "ò": "o",
+    "ô": "o",
+    "ö": "o",
+    "õ": "o",
+    "ú": "u",
+    "ù": "u",
+    "û": "u",
+    "ü": "u",
+})
+
+def remove_accents(message):
+    return message.translate(accents)
