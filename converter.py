@@ -88,5 +88,3 @@ def convert_to_tifinagh(message):
             i += 1
 
     return resultat
-
-print(convert_to_tifinagh("Azul fell-awen !"))
