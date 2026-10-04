@@ -4,7 +4,7 @@ Tifinagh Converter est une petite application web permettant de convertir un tex
 
 Le projet utilise **Python** pour la logique de conversion et **Flask** pour l’interface web.
 
-![Aperçu du convertisseur Latin vers Tifinagh](./maquette.png)
+![Aperçu du convertisseur Latin vers Tifinagh](./maquette-de-site.png)
 
 ## Fonctionnalités
 
