@@ -11,9 +11,9 @@
 <body>
     <header> 
         <section class="logo">
-            <img src="" alt="logo tifinagh">
+            <img src="static/images/z.png" alt="logo tifinagh" class="logo-img"> 
             <h1 class="logo-title">
-                Convertisseur Latin → Tifinagh
+                Latin → Tifinagh
             </h1>
         </section>
     </header>
@@ -22,11 +22,11 @@
         <section class="container">
             <section class="form block">
                 <h2 class="form-title subtitle">
-                    Entrez votre texte en alphabet latin
+                    Entrez votre texte en alphabet
                 </h2>
                     
                 <form method="POST">        
-                    <textarea name="message"></textarea>    
+                    <textarea name="message" class="text-box"></textarea>    
 
                     <button type="submit">      
                         Convertir       
@@ -39,7 +39,7 @@
                     resultat de la conversion
                 </h2>
 
-                <section class="result_container">
+                <section class="result_container text-box">
                     <p>
                         {{ resultat }}
                     </p>
